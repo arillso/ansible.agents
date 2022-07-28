@@ -1,6 +1,6 @@
 # Ansible Collection: arillso.agents
 
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=popout-square)](licence)[![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-arillso.agents-blue.svg?style=popout-square)](https://galaxy.ansible.com/arillso/agents)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=popout-square)](licence) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-arillso.agents-blue.svg?style=popout-square)](https://galaxy.ansible.com/arillso/agents)
 
 ## Description
 
