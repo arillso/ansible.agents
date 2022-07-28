@@ -13,7 +13,7 @@ can be found on the documentation page of Grafana Labs:
 
 <https://grafana.com/docs/agent/latest/configuration/server-config/>
 
-#### defaults
+#### defaults grafana_server
 
 ```yml
 grafana_server:
@@ -27,7 +27,7 @@ can be found on the documentation page of Grafana Labs:
 
 <https://grafana.com/docs/agent/latest/configuration/metrics-config/>
 
-#### defaults
+#### defaults grafana_metrics
 
 ```yml
 grafana_metrics:
@@ -44,7 +44,7 @@ can be found on the documentation page of Grafana Labs:
 
 <https://grafana.com/docs/agent/latest/configuration/integrations/>
 
-#### defaults
+#### defaults grafana_integrations
 
 ```yml
 grafana_integrations:
@@ -59,7 +59,7 @@ can be found on the documentation page of Grafana Labs:
 
 <https://grafana.com/docs/agent/latest/configuration/logs-config/>
 
-#### defaults
+#### defaults grafana_logs
 
 ```yml
 grafana_logs:
