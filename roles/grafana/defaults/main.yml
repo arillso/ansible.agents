@@ -1,0 +1,17 @@
+---
+
+grafana_server:
+  log_level: warn
+
+grafana_metrics:
+  global:
+    scrape_interval: 1m
+  configs:
+    - name: integrations
+
+grafana_integrations:
+  agent:
+    enabled: true
+
+grafana_logs:
+  positions_directory: "C:\\ProgramData\\grafana-agent-logs"
