@@ -1,0 +1,6 @@
+---
+
+- name: Install Grafana Agent
+  chocolatey.chocolatey.win_chocolatey:
+    name: grafana-agent
+    state: present
