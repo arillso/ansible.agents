@@ -1,4 +1,4 @@
-# For a full configuration reference, see: https://github.com/grafana/agent/blob/main/docs/configuration-reference.md.
+# {{ ansible_managed }}
 
 server:
   {{ grafana_server | to_nice_yaml | indent(2) }}

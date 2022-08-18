@@ -1,19 +1,12 @@
-## Path:
-## Description: Grafana Agent monitoring agent settings
-## Type:        string
-## Default:     ""
-## ServiceRestart: grafana-agent
-#
-# Command line options for grafana-agent
-#
-# Log level. Valid levels: [debug, info, warn, error] (default info)
-LOG_LEVEL="info"
+# {{ ansible_managed }}
+
+LOG_LEVEL="{{ grafana_log_level }}"
 
 # The configuration file holding the agent config
-CONFIG_FILE="/etc/grafana-agent.yaml"
+CONFIG_FILE="{{ grafana_config_file }}"
 
 # Any user defined arguments
-CUSTOM_ARGS="-server.http.address=127.0.0.1:9090 -server.grpc.address=127.0.0.1:9091"
+CUSTOM_ARGS="{{ grafana_custom_args }}"
 
 # Restart on system upgrade. Default to true
-RESTART_ON_UPGRADE=true
+RESTART_ON_UPGRADE={{ grafana_restart_on_upgrade }}
