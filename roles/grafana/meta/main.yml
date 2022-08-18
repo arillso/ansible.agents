@@ -1,5 +1,22 @@
 ---
 galaxy_info:
   description: The role installs the Grafana Agent and configures it.
+  author: "arillso (@arillso)"
+  license: MIT
+  min_ansible_version: 2.11
+  platforms:
+    - name: Ubuntu
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - all
+    - name: Windows
+      versions:
+        - all
+
+  galaxy_tags:
+    - grafana
+    - agent
 
 dependencies: []

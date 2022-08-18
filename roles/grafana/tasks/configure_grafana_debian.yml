@@ -1,0 +1,21 @@
+---
+
+- name: Create Grafana Agent Environment File
+  ansible.builtin.template:
+    src: "etc/default/grafana-agent.j2"
+    dest: "/etc/default/grafana-agent"
+    owner: "root"
+    group: "root"
+    mode: "0644"
+  notify:
+    - Restart Linux Grafana Agent
+
+- name: Create Grafana Agent Configuration
+  ansible.builtin.template:
+    src: "etc/grafana-agent.yaml.j2"
+    dest: "/etc/grafana-agent.yaml"
+    owner: "root"
+    group: "grafana-agent"
+    mode: "0640"
+  notify:
+    - Restart Linux Grafana Agent

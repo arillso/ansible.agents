@@ -1,5 +1,7 @@
 ---
 
+grafana_version: "{{ lookup('arillso.system.github_latest_release', 'grafana/agent')[1:] }}"
+
 grafana_server:
   log_level: warn
 
