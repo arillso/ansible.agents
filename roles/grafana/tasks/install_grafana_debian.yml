@@ -1,0 +1,5 @@
+---
+
+- name: Install Grafana Agent
+  ansible.builtin.apt:
+    deb: "https://github.com/grafana/agent/releases/download/v{{ grafana_version }}/grafana-agent-{{ grafana_version }}-1.amd64.deb"
