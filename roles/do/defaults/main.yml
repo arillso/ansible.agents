@@ -1,0 +1,6 @@
+---
+
+do_packages:
+  - name: do-agent
+
+do_service_name: do-agent

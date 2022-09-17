@@ -1,0 +1,22 @@
+---
+galaxy_info:
+  description: Cross-distro installation of the DigitalOcean monitoring agent.
+  author: "arillso (@arillso)"
+  license: MIT
+  min_ansible_version: 2.11
+  platforms:
+    - name: Ubuntu
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - all
+    - name: EL
+      versions:
+        - all
+
+  galaxy_tags:
+    - cloud
+    - monitoring
+
+dependencies: []
