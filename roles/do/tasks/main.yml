@@ -1,0 +1,16 @@
+---
+
+- name: include distribution tasks
+  ansible.builtin.include_tasks: "{{ lookup('ansible.builtin.first_found', params) }}"
+  vars:
+    params:
+      skip: true
+      files:
+        - "install_do_{{ ansible_os_family | lower }}.yml"
+        - "install_do_{{ ansible_system | lower }}.yml"
+
+- name: Run arillso Package
+  ansible.builtin.include_role:
+    name: arillso.system.packages
+  vars:
+    packages: "{{ do_packages }}"

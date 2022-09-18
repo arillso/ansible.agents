@@ -1,0 +1,9 @@
+---
+
+- name: Run arillso apt Repositories
+  ansible.builtin.include_role:
+    name: arillso.system.apt_repositories
+  vars:
+    apt_repositories:
+      - repo: "deb https://repos.insights.digitalocean.com/apt/do-agent main main"
+        filename: "digitalocean-agent"

@@ -8,6 +8,7 @@ This is an Ansible collection that installs and then configures various agents.
 
 ## Roles
 
+- [Do](roles/Do/README.md)
 - [Grafana](roles/grafana/README.md)
 
 ## License
