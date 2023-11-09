@@ -1,5 +1,4 @@
 ---
-
 do_packages:
   - name: do-agent
 

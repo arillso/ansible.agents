@@ -1,10 +1,9 @@
 ---
-
 - name: Run arillso yum Repositories
   ansible.builtin.include_role:
     name: arillso.system.yum_repositories
   vars:
-    yum_repositories:
+    yum_repositories_list:
       - name: digitalocean-agent
         description: DigitalOcean Agent
         baseurl: "https://repos.insights.digitalocean.com/yum/do-agent/$basearch"
@@ -17,3 +16,9 @@
         repo_gpgcheck: 0
         sslcacert: "/etc/pki/tls/certs/ca-bundle.crt"
         sslverify: 0
+
+- name: Run arillso Package
+  ansible.builtin.include_role:
+    name: arillso.system.packages
+  vars:
+    packages_list: "{{ do_packages }}"

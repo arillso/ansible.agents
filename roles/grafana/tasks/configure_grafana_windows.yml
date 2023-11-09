@@ -1,5 +1,4 @@
 ---
-
 - name: Create Grafana Agent Configuration
   ansible.windows.win_template:
     src: "C/Program Files/Grafana Agent/agent-config.yaml.j2"
