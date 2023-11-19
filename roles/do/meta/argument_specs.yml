@@ -1,0 +1,20 @@
+---
+argument_specs:
+  main:
+    short_description: Install DigitalOcean Agent
+    description:
+      - Installs the DigitalOcean Agent on the target system.
+    options:
+      do_packages:
+        type: list
+        elements: dict
+        description:
+          - A list of package names and versions to install for the DigitalOcean Agent.
+          - Default is to use the distribution's package manager to install the latest version of the agent.
+        default: [{ "name": "do-agent" }]
+        required: false
+      do_service_name:
+        type: str
+        description: The name of the service that runs the DigitalOcean Agent. Default is 'do-agent'.
+        default: do-agent
+        required: false

@@ -1,5 +1,4 @@
 ---
-
 - name: Create Grafana Agent Environment File
   ansible.builtin.template:
     src: "etc/default/grafana-agent.j2"

@@ -3,7 +3,7 @@ galaxy_info:
   description: Cross-distro installation of the DigitalOcean monitoring agent.
   author: "arillso (@arillso)"
   license: MIT
-  min_ansible_version: 2.11
+  min_ansible_version: "2.15"
   platforms:
     - name: Ubuntu
       versions:
